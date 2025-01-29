@@ -160,7 +160,7 @@ def check_all_in_5s_and_reset_in_10():
 
         # Добавляем в историю, если игра принята
         if final_result == "accept":
-            history.insert(0, {  # Новая запись сверху
+            game_history.insert(0, {  # Новая запись сверху
                 "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
                 "lobby_id": list(all_lobby_ids)[0],
                 "status": "Game started"
